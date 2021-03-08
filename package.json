@@ -1,0 +1,13 @@
+{
+  "name": "@ubio/eslint-config",
+  "version": "1.0.0-pre.0",
+  "description": "UBIO Shared ESLint Configuration",
+  "main": "config.json",
+  "author": "ubio",
+  "license": "ISC",
+  "dependencies": {
+    "@typescript-eslint/eslint-plugin": "^4.16.1",
+    "@typescript-eslint/parser": "^4.16.1",
+    "eslint-config-recommended": "^4.1.0"
+  }
+}
