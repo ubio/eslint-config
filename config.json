@@ -10,7 +10,9 @@
         "sourceType": "module",
         "modules": true
     },
-    "env": ["node"],
+    "env": {
+        "node": true
+    },
     "plugins": ["@typescript-eslint"],
     "settings": {
         "import/resolver": {
@@ -75,21 +77,6 @@
                 "varsIgnorePattern": "^_",
                 "argsIgnorePattern": "^_"
             }
-        ],
-        "no-restricted-properties": [
-            "error",
-            {
-                "object": "describe",
-                "property": "only"
-            },
-            {
-                "object": "context",
-                "property": "only"
-            },
-            {
-                "object": "it",
-                "property": "only"
-            }
         ]
     },
     "overrides": [
@@ -101,7 +88,27 @@
         },
         {
             "files": ["test/**/*"],
-            "env": ["node", "mocha"]
+            "env": {
+                "node": true,
+                "mocha": true
+            },
+            "rules": {
+                "no-restricted-properties": [
+                    "error",
+                    {
+                        "object": "describe",
+                        "property": "only"
+                    },
+                    {
+                        "object": "context",
+                        "property": "only"
+                    },
+                    {
+                        "object": "it",
+                        "property": "only"
+                    }
+                ]
+            }
         }
     ]
 }
