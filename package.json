@@ -11,6 +11,8 @@
   "dependencies": {
     "@typescript-eslint/eslint-plugin": "^4.16.1",
     "@typescript-eslint/parser": "^4.16.1",
-    "eslint-config-recommended": "^4.1.0"
+    "eslint-config-recommended": "^4.1.0",
+    "eslint-plugin-simple-import-sort": "^7.0.0",
+    "eslint-plugin-unused-imports": "^1.1.0"
   }
 }
