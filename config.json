@@ -10,6 +10,7 @@
         "sourceType": "module",
         "modules": true
     },
+    "env": ["node"],
     "plugins": ["@typescript-eslint"],
     "settings": {
         "import/resolver": {
@@ -96,6 +97,10 @@
             "rules": {
                 "import/no-commonjs": 0
             }
+        },
+        {
+            "files": ["test/**/*"],
+            "env": ["node", "mocha"]
         }
     ]
 }
