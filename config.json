@@ -61,6 +61,7 @@
         "no-extra-parens": 0,
         "no-invalid-this": 0,
         "no-loop-func": 0,
+        "no-multiple-empty-lines": [2, { "max": 2, "maxBOF": 0, "maxEOF": 1 }],
         "no-new-func": 0,
         "no-prototype-builtins": 0,
         "no-use-before-define": 0,
