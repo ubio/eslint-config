@@ -4,6 +4,7 @@
   "description": "UBIO Shared ESLint Configuration",
   "author": "ubio",
   "license": "ISC",
+  "main": "./index.js",
   "scripts": {
     "postversion": "npm publish && git push --tags origin main"
   },
