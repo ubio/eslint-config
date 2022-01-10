@@ -93,7 +93,7 @@
         {
             "files": ["*.ts"],
             "rules": {
-                "semi": 0,  // in favor of @typescript-eslint/semi
+                "semi": 0
             }
         },
         {
