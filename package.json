@@ -13,9 +13,7 @@
     "@typescript-eslint/parser": "^4.16.1",
     "eslint-config-recommended": "^4.1.0",
     "eslint-plugin-simple-import-sort": "^7.0.0",
-    "eslint-plugin-unused-imports": "^1.1.0"
-  },
-  "peerDependencies": {
+    "eslint-plugin-unused-imports": "^1.1.0",
     "eslint-plugin-vue": "^8.3.0"
   }
 }
