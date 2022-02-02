@@ -139,16 +139,17 @@
                 "vue/no-multiple-template-root": 0,
                 "vue/multi-word-component-names": 0,
                 "vue/component-definition-name-casing": [2, "PascalCase"],
-                "vue/html-self-closing": 2,
-                "vue/mustache-interpolation-spacing": 2,
-                "vue/no-multi-spaces": 2,
+                "vue/attributes-order": 2,
+                "vue/first-attribute-linebreak": 2,
+                "vue/html-closing-bracket-spacing": 2,
                 "vue/html-end-tags": 2,
                 "vue/html-indent": [2, 4, { "alignAttributesVertically": false }],
-                "vue/html-closing-bracket-spacing": 2,
-                "vue/first-attribute-linebreak": 2,
-                "vue/prop-name-casing": 2,
-                "vue/attributes-order": 2,
-                "vue/order-in-components": 2
+                "vue/html-self-closing": 2,
+                "vue/max-attributes-per-line": 2,
+                "vue/mustache-interpolation-spacing": 2,
+                "vue/no-multi-spaces": 2,
+                "vue/order-in-components": 2,
+                "vue/prop-name-casing": 2
             }
         }
     ]
