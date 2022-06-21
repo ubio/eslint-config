@@ -150,6 +150,7 @@
                 "vue/no-multi-spaces": 2,
                 "vue/no-multiple-template-root": 0,
                 "vue/no-template-key": 0,
+                "vue/no-v-for-template-key": 0,
                 "vue/order-in-components": 2,
                 "vue/prop-name-casing": 2
             }
