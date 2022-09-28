@@ -40,7 +40,7 @@
         "@typescript-eslint/no-use-before-define": 0,
         "@typescript-eslint/no-var-requires": 0,
         "@typescript-eslint/semi": [2, "always"],
-        "@typescript-eslint/indent": [2, 4, { "ignoredNodes": ["PropertyDefinition[decorators]", "TSUnionType", "TSIntersectionType", "TSConditionalType", "TSTypeReference"], "SwitchCase": 1, "FunctionExpression": { "parameters": "off" } }],
+        "@typescript-eslint/indent": [2, 4, { "ignoredNodes": ["PropertyDefinition[decorators]", "TSUnionType", "TSIntersectionType", "TSConditionalType", "TSTypeReference", "Decorator"], "SwitchCase": 1, "FunctionExpression": { "parameters": "off" } }],
         "array-bracket-spacing": [2, "never"],
         "arrow-body-style": 0,
         "brace-style": 0,
