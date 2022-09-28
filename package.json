@@ -1,6 +1,6 @@
 {
     "name": "@ubio/eslint-config",
-    "version": "1.4.3",
+    "version": "1.4.4",
     "description": "UBIO Shared ESLint Configuration",
     "author": "ubio",
     "license": "ISC",
