@@ -1,19 +1,19 @@
 {
-  "name": "@ubio/eslint-config",
-  "version": "1.3.8",
-  "description": "UBIO Shared ESLint Configuration",
-  "author": "ubio",
-  "license": "ISC",
-  "main": "./index.js",
-  "scripts": {
-    "postversion": "npm publish && git push --tags origin main"
-  },
-  "dependencies": {
-    "@typescript-eslint/eslint-plugin": "^4.16.1",
-    "@typescript-eslint/parser": "^4.16.1",
-    "eslint-config-recommended": "^4.1.0",
-    "eslint-plugin-simple-import-sort": "^7.0.0",
-    "eslint-plugin-unused-imports": "^1.1.0",
-    "eslint-plugin-vue": "^8.3.0"
-  }
+    "name": "@ubio/eslint-config",
+    "version": "1.3.8",
+    "description": "UBIO Shared ESLint Configuration",
+    "author": "ubio",
+    "license": "ISC",
+    "main": "./index.js",
+    "scripts": {
+        "postversion": "npm publish && git push --tags origin main"
+    },
+    "dependencies": {
+        "@typescript-eslint/eslint-plugin": "^5.38.1",
+        "@typescript-eslint/parser": "^5.38.1",
+        "eslint-config-recommended": "^4.1.0",
+        "eslint-plugin-simple-import-sort": "^8.0.0",
+        "eslint-plugin-unused-imports": "^2.0.0",
+        "eslint-plugin-vue": "^9.5.1"
+    }
 }
