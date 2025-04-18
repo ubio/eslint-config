@@ -9,11 +9,12 @@
         "postversion": "npm publish && git push --tags origin main"
     },
     "dependencies": {
-        "@typescript-eslint/eslint-plugin": "^5.38.1",
-        "@typescript-eslint/parser": "^5.38.1",
+        "@stylistic/eslint-plugin": "^4.2.0",
+        "@typescript-eslint/eslint-plugin": "^8.30.1",
+        "@typescript-eslint/parser": "^8.30.1",
         "eslint-config-recommended": "^4.1.0",
-        "eslint-plugin-simple-import-sort": "^8.0.0",
-        "eslint-plugin-unused-imports": "^2.0.0",
-        "eslint-plugin-vue": "^9.5.1"
+        "eslint-plugin-simple-import-sort": "^12.1.1",
+        "eslint-plugin-unused-imports": "^4.1.4",
+        "eslint-plugin-vue": "^10.0.0"
     }
 }
