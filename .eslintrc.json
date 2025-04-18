@@ -88,7 +88,12 @@
                 "varsIgnorePattern": "^_",
                 "argsIgnorePattern": "^_"
             }
-        ]
+        ],
+        "@stylistic/indent": ["error", 4],
+        "@stylistic/quotes": ["error", "single"],
+        "@stylistic/semi": ["error", "always"],
+        "@stylistic/comma-dangle": ["error", "always-multiline"],
+        "@stylistic/object-curly-spacing": ["error", "always"]
     },
     "overrides": [
         {
