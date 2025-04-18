@@ -153,7 +153,10 @@
                 "vue/no-template-key": 0,
                 "vue/no-v-for-template-key": 0,
                 "vue/order-in-components": 2,
-                "vue/prop-name-casing": 2
+                "vue/prop-name-casing": 2,
+                "vue/block-order": ["error", {
+                    "order": ["template", "script", "style"]
+                }]
             }
         }
     ]
