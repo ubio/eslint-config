@@ -4,7 +4,7 @@ import simpleImportSort from 'eslint-plugin-simple-import-sort';
 import unusedImports from 'eslint-plugin-unused-imports';
 import vue from 'eslint-plugin-vue';
 import globals from 'globals';
-import { parser as tsParser, plugin as typescriptEslint } from 'typescript-eslint';
+import { plugin as typescriptEslint } from 'typescript-eslint';
 import vueParser from 'vue-eslint-parser';
 
 export const baseConfig = {
@@ -22,7 +22,7 @@ export const baseConfig = {
             ...globals.node,
         },
 
-        parser: tsParser,
+        parser: '@typescript-eslint/parser',
         ecmaVersion: 2022,
         sourceType: 'module',
 
@@ -172,7 +172,7 @@ export const vueConfig = {
     languageOptions: {
         parser: vueParser,
         parserOptions: {
-            parser: tsParser,
+            parser: '@typescript-eslint/parser',
             extraFileExtensions: ['.vue'],
             sourceType: 'module',
             ecmaVersion: 'latest',
@@ -211,21 +211,21 @@ export const vueConfig = {
 };
 
 export const tsConfig = {
-    files: ['*.ts'],
+    files: ['**/*.ts'],
     rules: {
         'semi': 0,
     },
 };
 
 export const dtsConfig = {
-    files: ['*.d.ts'],
+    files: ['**/*.d.ts'],
     rules: {
         'import/no-default-export': 0,
     },
 };
 
 export const mjsConfig = {
-    files: ['*.mjs'],
+    files: ['**/*.mjs'],
     rules: {
         'import/no-default-export': 0,
     },
