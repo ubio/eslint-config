@@ -1,15 +1,16 @@
+import eslint from '@eslint/js';
 import stylistic from '@stylistic/eslint-plugin';
 import importPlugin from 'eslint-plugin-import';
 import simpleImportSort from 'eslint-plugin-simple-import-sort';
 import unusedImports from 'eslint-plugin-unused-imports';
 import vue from 'eslint-plugin-vue';
 import globals from 'globals';
-import { plugin as typescriptEslint } from 'typescript-eslint';
+import tsEslint, { parser as tsParser, plugin as tsPlugin } from 'typescript-eslint';
 import vueParser from 'vue-eslint-parser';
 
 export const baseConfig = {
     plugins: {
-        '@typescript-eslint': typescriptEslint,
+        '@typescript-eslint': tsPlugin,
         '@stylistic': stylistic,
         'simple-import-sort': simpleImportSort,
         'unused-imports': unusedImports,
@@ -22,7 +23,7 @@ export const baseConfig = {
             ...globals.node,
         },
 
-        parser: '@typescript-eslint/parser',
+        parser: tsParser,
         ecmaVersion: 2022,
         sourceType: 'module',
 
@@ -172,7 +173,7 @@ export const vueConfig = {
     languageOptions: {
         parser: vueParser,
         parserOptions: {
-            parser: '@typescript-eslint/parser',
+            parser: tsParser,
             extraFileExtensions: ['.vue'],
             sourceType: 'module',
             ecmaVersion: 'latest',
@@ -232,6 +233,13 @@ export const mjsConfig = {
 };
 
 export const sharedConfigs = [
+    // Flat-config friendly recommended presets first
+    eslint.configs.recommended,
+    ...tsEslint.configs.recommended,
+    ...tsEslint.configs.stylistic,
+    ...vue.configs['flat/recommended'],
+
+    // Then our base and overrides
     baseConfig,
     tsConfig,
     dtsConfig,
