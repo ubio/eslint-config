@@ -17,6 +17,7 @@ export const typescriptRules = {
     '@stylistic/yield-star-spacing': ['error', 'after'],
     '@stylistic/generator-star-spacing': ['error', 'before'],
     '@stylistic/object-curly-spacing': ['error', 'always'],
+    '@stylistic/semi': ['error', 'always'],
     '@typescript-eslint/array-type': ['error', { default: 'array-simple' }],
     '@typescript-eslint/class-literal-property-style': 'off',
     '@typescript-eslint/no-empty-function': 'off',
