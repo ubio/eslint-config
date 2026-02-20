@@ -30,6 +30,7 @@ export const typescriptRules = {
     'no-console': ['error', { 'allow': ['warn', 'info', 'error'] }],
     'no-empty': ['error', { allowEmptyCatch: true }],
     'vue/prefer-import-from-vue': 'off',
+    'preserve-caught-error': 'off'
 };
 
 export const javascriptRules = {
